@@ -1,15 +1,10 @@
 # Importing required modules
-# importing pyttsx3
 import pyttsx3
-# importing speech_recognition
 import speech_recognition as sr
-# importing os module
 import os
 
 
-# creating take_commands() function which
-# can take some audio, Recognize and return
-# if there are not any errors
+# creating take commands function 
 def take_commands():
     # initializing speech_recognition
     r = sr.Recognizer()
@@ -36,8 +31,7 @@ def take_commands():
     return query
 
 
-# creating Speak() function to giving Speaking power
-# to our voice assistant
+# creating Speak function
 def speak(audio):
     # initializing pyttsx3 module
     engine = pyttsx3.init()
